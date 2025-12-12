@@ -97,9 +97,131 @@ FED 사용에 문제가 발생할 경우 응급 복구를 통해 소프트웨어
 1.	시스템 트레이에서 DRM 클라이언트![](2025-12-12-16-08-37.png) > 로그아웃을 클릭합니다.
 2.	시스템 트레이에서 DRM 클라이언트 아이콘이 ![](2025-12-12-16-09-01.png)로 변경되었는지 확인합니다.
 ### DRM 모드 스위치
+고객사의 도입 환경에 따라 DRM 모드 스위치 기능을 사용해 DRM 모드를 끄거나 켤 수 있습니다. DRM 모드를 끄면 실시간 암호화 등과 같은 사내 보안 정책의 적용이 일시 중지되며, DRM 모드를 킨 상태에서만 보안 문서를 사용할 수 있습니다. 아래의 방법으로 DRM 모드를 끄거나 켜십시오. 
+**참고**: 관리자 설정에 따라 DRM 모드 스위치 메뉴가 표시되지 않을 수 있습니다. 
 #### DRM 모드 스위치 끄기
+1.	시스템 트레이에서 DRM 클라이언트![](2025-12-12-16-14-00.png)를 클릭합니다.
+2.	**DRM 모드: 끄기**를 클릭합니다. 
+3.	DRM 모드가 꺼지면 시스템 트레이의 아이콘이 ![](2025-12-12-16-14-30.png)로 변경됩니다.
 #### DRM 모드 스위치 켜기
+1.	시스템 트레이에서 DRM 클라이언트![](2025-12-12-16-15-07.png)를 클릭합니다.
+2.	**DRM 모드: 켜기**를 클릭합니다. 
+3.	DRM 모드가 켜지면 시스템 트레이의 아이콘이 ![](2025-12-12-16-15-29.png)로 변경됩니다.
+**참고**: 아래 방법으로 PC 시작 시 기본 DRM 모드를 설정할 수 있습니다. 
+(1) 시스템 트레이에서 DRM 클라이언트 를 클릭합니다.
+(2) 보안 정책 확인을 클릭합니다. 
+(3) 우측 상단의 사용자 이름을 클릭한 후 환경설정을 클릭합니다. 
+(4) 좌측에서 옵션 메뉴를 클릭합니다. 
+(5) PC 시작 시 자동으로 DRM 모드가 켜지게 하려면 PC 시작 시 DRM 모드 켜기를 클릭합니다.
+(6) 표시된 창을 모두 닫습니다. 단, 옵션 메뉴 또는 PC 시작 시 DRM 모드 켜기 항목은 관리자 설정에 따라서 표시되지 않을 수 있습니다.
 ### DRM 클라이언트 상태별 아이콘
+DRM클라이언트의 로그인 상태 및 네트워크 연결 상태, DRM 모드 상태는 시스템 트레이 영역에 표시되는 자물쇠 아이콘을 통해 확인할 수 있습니다.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">상태</th>
+      <th>아이콘</th>
+      <th>설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- 로그인 / 온라인 -->
+    <tr>
+      <td rowspan="6">로그인</td>
+      <td rowspan="2">온라인</td>
+      <td style="text-align: center; vertical-align: middle;">
+       <img src="image.png" alt="alt text" width=20>
+      </td>
+      <td>
+        네트워크에 연결됨<br>
+        DRM 클라이언트에 로그인함<br>
+        DRM 모드: 꺼짐
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center; vertical-align: middle;">
+        <img src="image.png.png" alt="alt text" width=20>
+      </td>
+      <td>
+        네트워크에 연결됨<br>
+        DRM 클라이언트에 로그인함<br>
+        DRM 모드: 켜짐
+      </td>
+    </tr>
+    <!-- 로그인 / 오프라인 -->
+    <tr>
+      <td rowspan="2">오프라인</td>
+      <td>
+        <img src="icons/offline_n.png" alt="N" width="20">
+      </td>
+      <td>
+        네트워크에 연결되지 않음<br>
+        DRM 클라이언트에 로그인함<br>
+        DRM 모드: 꺼짐
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="icons/offline_f.png" alt="F" width="20">
+      </td>
+      <td>
+        네트워크에 연결되지 않음<br>
+        DRM 클라이언트에 로그인함<br>
+        DRM 모드: 켜짐
+      </td>
+    </tr>
+    <!-- 로그인 / 반출 -->
+    <tr>
+      <td rowspan="2">반출</td>
+      <td>
+        <img src="icons/export_n.png" alt="N" width="20">
+      </td>
+      <td>
+        네트워크에 연결되지 않음<br>
+        DRM 클라이언트에 로그인함<br>
+        (반출 기간 동안 로그인 가능)<br>
+        DRM 모드: 꺼짐
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="icons/export_f.png" alt="F" width="20">
+      </td>
+      <td>
+        네트워크에 연결되지 않음<br>
+        DRM 클라이언트에 로그인함<br>
+        (반출 기간 동안 로그인 가능)<br>
+        DRM 모드: 켜짐
+      </td>
+    </tr>
+    <!-- 로그오프 -->
+    <tr>
+      <td rowspan="2" colspan="2">로그오프</td>
+      <td>
+        <img src="icons/logout_n.png" alt="N" width="20">
+      </td>
+      <td>
+        네트워크 연결 여부와 상관 없음<br>
+        DRM 클라이언트에서 로그아웃함<br>
+        DRM 모드: 꺼짐
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="icons/logout_f.png" alt="F" width="20">
+      </td>
+      <td>
+        네트워크 연결 여부와 상관 없음<br>
+        DRM 클라이언트에서 로그아웃함<br>
+        DRM 모드: 켜짐
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
 ### 설치된 제품 버전 확인 
 ### FED 주요 기능
 #### 보안 문서 사용
