@@ -96,6 +96,7 @@ FED 사용에 문제가 발생할 경우 응급 복구를 통해 소프트웨어
 #### DRM 클라이언트 로그아웃
 1.	시스템 트레이에서 DRM 클라이언트![](2025-12-12-16-08-37.png) > 로그아웃을 클릭합니다.
 2.	시스템 트레이에서 DRM 클라이언트 아이콘이 ![](2025-12-12-16-09-01.png)로 변경되었는지 확인합니다.
+<a id="drm-모드-스위치"></a>
 ### DRM 모드 스위치
 고객사의 도입 환경에 따라 DRM 모드 스위치 기능을 사용해 DRM 모드를 끄거나 켤 수 있습니다. DRM 모드를 끄면 실시간 암호화 등과 같은 사내 보안 정책의 적용이 일시 중지되며, DRM 모드를 킨 상태에서만 보안 문서를 사용할 수 있습니다. 아래의 방법으로 DRM 모드를 끄거나 켜십시오. 
 **참고**: 관리자 설정에 따라 DRM 모드 스위치 메뉴가 표시되지 않을 수 있습니다. 
@@ -153,8 +154,8 @@ DRM클라이언트의 로그인 상태 및 네트워크 연결 상태, DRM 모�
     <!-- 로그인 / 오프라인 -->
     <tr>
       <td rowspan="2">오프라인</td>
-      <td>
-        <img src="icons/offline_n.png" alt="N" width="20">
+      <td style="text-align: center; vertical-align: middle;">
+        <img src="2025-12-12-17-24-09.png" alt="N" width="20">
       </td>
       <td>
         네트워크에 연결되지 않음<br>
@@ -163,8 +164,8 @@ DRM클라이언트의 로그인 상태 및 네트워크 연결 상태, DRM 모�
       </td>
     </tr>
     <tr>
-      <td>
-        <img src="icons/offline_f.png" alt="F" width="20">
+      <td style="text-align: center; vertical-align: middle;">
+        <img src="2025-12-12-17-25-15.png" alt="F" width="20">
       </td>
       <td>
         네트워크에 연결되지 않음<br>
@@ -175,8 +176,8 @@ DRM클라이언트의 로그인 상태 및 네트워크 연결 상태, DRM 모�
     <!-- 로그인 / 반출 -->
     <tr>
       <td rowspan="2">반출</td>
-      <td>
-        <img src="icons/export_n.png" alt="N" width="20">
+      <td style="text-align: center; vertical-align: middle;">
+        <img src="2025-12-12-17-25-54.png" alt="N" width="20">
       </td>
       <td>
         네트워크에 연결되지 않음<br>
@@ -186,8 +187,8 @@ DRM클라이언트의 로그인 상태 및 네트워크 연결 상태, DRM 모�
       </td>
     </tr>
     <tr>
-      <td>
-        <img src="icons/export_f.png" alt="F" width="20">
+      <td style="text-align: center; vertical-align: middle;">
+        <img src="2025-12-12-17-27-03.png" alt="F" width="20">
       </td>
       <td>
         네트워크에 연결되지 않음<br>
@@ -199,8 +200,8 @@ DRM클라이언트의 로그인 상태 및 네트워크 연결 상태, DRM 모�
     <!-- 로그오프 -->
     <tr>
       <td rowspan="2" colspan="2">로그오프</td>
-      <td>
-        <img src="icons/logout_n.png" alt="N" width="20">
+      <td style="text-align: center; vertical-align: middle;">
+        <img src="2025-12-12-17-27-40.png" alt="N" width="20">
       </td>
       <td>
         네트워크 연결 여부와 상관 없음<br>
@@ -209,8 +210,8 @@ DRM클라이언트의 로그인 상태 및 네트워크 연결 상태, DRM 모�
       </td>
     </tr>
     <tr>
-      <td>
-        <img src="icons/logout_f.png" alt="F" width="20">
+      <td style="text-align: center; vertical-align: middle;">
+        <img src="2025-12-12-17-29-11.png" alt="F" width="20">
       </td>
       <td>
         네트워크 연결 여부와 상관 없음<br>
@@ -221,6 +222,12 @@ DRM클라이언트의 로그인 상태 및 네트워크 연결 상태, DRM 모�
   </tbody>
 </table>
 
+**참고**:  
+<br>(1) 프라인 또는 반출 상태에서는 보안 문서 유형에 따라 문서 사용이 제한될 수 있습니다.
+<br>(2) 네트워크에 연결되지 않은 상태에서 오프라인 로그인 허용 시간 또는 반출 기간을 초과하여 DRM 클라이언트에 로그인할 수 없는 경우, 시스템 트레이에서 DRM 클라이언트  를 클릭한 후 PC 반출 사외 신청을 클릭해 수동으로 PC 반출을 신청할 수 있습니다. (PC 반출 사외 신청 및 반출 정책 등록 참고)
+<br>
+
+(3) DRM 모드 스위치를 끄고 켜는 방법은 [DRM 모드 스위치](#drm-모드-스위치)를 참고하십시오.
 
 ### 설치된 제품 버전 확인 
 ### FED 주요 기능
